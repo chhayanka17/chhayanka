@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+   int a, b, c,  add, subtract, multiply, divide;
+   printf("Enter Number:\t");
+   scanf("%d %d", &a, &b);
+   printf("Enter your choice:\t");
+   scanf("%d", &c);
+   switch(c)
+   {
+       case 1: 
+            add = a + b;
+            printf("%d\n", add);
+            break;
+       
+       case 2: 
+            subtract = a - b;
+            printf("%d\n", subtract);
+            break;
+       
+       case 3: 
+            multiply = a * b;
+            printf("%d\n", multiply);
+            break;
+       
+       case 4: 
+            divide = a/b;
+            printf("%d\n", divide);
+            break;
+   
+       default:
+            printf("This is the wrong command\n");
+   } // end switch
+   printf("end");
+}
