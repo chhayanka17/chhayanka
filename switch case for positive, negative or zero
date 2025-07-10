@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+   int c;
+   printf("Enter any number:\t");
+   scanf("%d", &c);
+   switch(c > 0)
+   {
+       case 1: 
+            printf("Number is positive\n");
+            break;
+       
+       case 0: 
+            switch(c == 0)
+            {
+                case 1: 
+                    printf("its a zero\n");
+                    break;
+                case 0:
+                    printf("Number is negative\n");
+                    break;
+            }
+        
+   } // end switch
+   printf("end");
+}
