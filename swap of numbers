@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+int a, b, c, d. swap;
+printf("Enter the number 1 to be swap\t");
+scanf("%d", &a);
+printf("Enter the number 2 to be swap\t");
+scanf("%d", &b);
+c = b;
+b = a;
+a = c;
+swap = (c*10)+(b*1);
+printf("before swaping it was %d and %d\n". b. a );
+printf("After swaping it is %d and %d\n". a. b);
+return 0;
+}
