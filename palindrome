@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main( ){
+int a, b, c, d, e;
+printf("Enter any number\t");
+scanf("%d", &a);
+e = a;
+d = a%10;
+a = a/10;
+c = a%10;
+a = a/10;
+b = a%10;
+a = a/10:{
+if(d*100 + c*10 + b*1)
+printf("%d is a Palindrome", e);
+else
+printf("%d is not a palindrome". e);
+}
+return 0;
+}
