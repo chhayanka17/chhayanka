@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+int a. b. c. d. e. reverse:
+printf("Enter the 3 digit number to be reversed\t");
+scanf("%d". &a):
+e = a:
+b = a%10:
+a = a/10;
+c = a%10;
+a = a/10;
+d = a%10;
+reverse = (b*100)+(c*10)+d;
+printf("%d\t". reverse);
+printf("The reverse of %d is xd\t". e. reverse):
+return 0:
+}
