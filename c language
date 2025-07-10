@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+float main( )
+{
+float a, b, c, d, e;
+clrscr() ;
+printf ("Enter maths marks");
+scanf ("%f", &a) ;
+printf ("Enter english marks");
+scanf ("%f", &b) ;
+printf ("Enter pps marks ");
+scanf ("%f", &c);
+printf ("number of entries");
+scanf ("%f", &d) ;
+e = (a + b + c)/d;
+printf("%f",e);
+getch( ) ;
+return 0;
+}
