@@ -1,0 +1,26 @@
+#include <stdio.h>
+ int main() {
+   int c;
+   printf("Enter any MONTH:\t");
+  scanf("%d", &c);
+   switch(c)
+   {
+        case 1:  // January
+        case 3:  // March
+        case 5:  // May
+        case 7:  // July
+        case 8:  // August
+        case 10: // October
+        case 12: // December
+            printf("Number of days is 31\n");
+            break;
+       case 2: // February
+             printf("The number of days is either 28 or 29\n");
+             break;
+       
+       default:
+            printf("The number of days is 30\n");
+            break;
+    }
+        
+         }
