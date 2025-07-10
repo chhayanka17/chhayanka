@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main( ){
+int a, b, c, d;
+printf("Enter any number\t");
+scanf("%d". &a);
+c = a;
+printf("Enter any number\t");
+scanf ("%d", &b);
+d = b;
+a = a - b;
+b - a + b;
+a = b - a;
+printf("The numbers before swaping are Nd and %din". c. d);
+printf ("The numbers after swaping are d and %d". a. b);
+return 0;
+}
