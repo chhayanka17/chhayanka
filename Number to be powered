@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+int a, b, c;
+printf("Enter the number to be powered\t");
+scanf("%d", &a);
+printf("Enter the power\t");
+scanf("%d", &b);
+c = pow(a, b);
+printf("%d", c );
+return 0;
+}
