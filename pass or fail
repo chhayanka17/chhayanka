@@ -1,0 +1,16 @@
+#include <stdio.h>
+float main()
+{
+    float a, b, c, d;
+    printf("Enter the Maths grade out of 100\n");
+    scanf("%f", &a);
+    printf("Enter the Chemistry grade out of 100\n");
+    scanf("%f", &b);
+    printf("Enter the Physics out of 100\n");
+    scanf("%f", &c);
+    d = ((a + b + c)/300)*100;
+    if(d > 50)
+    printf("The person has passed");
+    else
+    printf("The person has failed");
+}
