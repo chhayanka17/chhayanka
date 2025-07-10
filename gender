@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char ch;
+     printf("Enter any Gender:\t");
+     scanf("%c", &ch);
+     if((ch == 77) || (ch == 109))
+     printf("Its a male");
+     else
+     printf("Its a female");
+     
+    
+     
+    return 0;
+}
