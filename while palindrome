@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+int main() {
+    int a, b,cnt=0,n, pal=0,t;
+    printf("Enter any number till 4 digit:\t");
+    scanf("%d", &a);
+    b = a;
+    while(a!=0){
+        n = a%10;
+        cnt++; // count of digit
+        a = a/10;
+    }
+    printf("The no. of digits in %d is %d\n", b,cnt );
+    a=b;
+    switch(cnt)
+    {
+        case 4 :
+            t=1000;
+            while(a!=0)
+            {
+                n = a%10;
+                pal = pal+(n*t) ;
+                t=t/10;
+                a = a/10;
+            }
+            if(b == pal){
+            printf("The palindrome of %d will be %d\n", b, pal);}
+            else
+            printf("Its not a palindrome");
+                        
+            break;
+        case 3 :
+            t=100;
+            while(a!=0)
+            {
+                n = a%10;
+                pal = pal+(n*t) ;
+                t=t/10;
+                a = a/10;
+            }
+            if(b == pal){
+            printf("The palindrome of %d will be %d\n", b, pal);}
+            else
+            printf("Its not a palindrome");
+            break;
+        case 2 :
+            t=10;
+            while(a!=0)
+            {
+                n = a%10;
+                pal = pal+(n*t) ;
+                t=t/10;
+                a = a/10;
+            }
+           if(b == pal){
+            printf("The palindrome of %d will be %d\n", b, pal);}
+            else
+            printf("Its not a palindrome");
+            break;
+        case 1 :
+            t=1;
+            while(a!=0)
+            {
+                n = a%10;
+                pal = pal+(n*t) ;
+                t=t/10;
+                a = a/10;
+            }
+            if(b == pal){
+            printf("The palindrome of %d will be %d\n", b, pal);}
+            else
+            printf("Its not a palindrome");
+            break;
+        default:
+            printf("end");
+            
+        
+    }
+    return 0;
+}
