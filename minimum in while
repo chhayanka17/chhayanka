@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c,i, d, min,temp;
+    printf("Enter 1st number:\t");
+    scanf("%d", &a);
+    min=a;
+    i=2;
+    while(i<=5)
+    {
+        printf("Enter %d  number:\t",i);
+        scanf("%d", &b);    
+        
+        if(min>b)
+        {
+            //swap
+            temp=b;
+            b=min;
+            min= temp;
+        }
+        
+       // printf("min= %d\n",min);
+        i++;
+    }
+        printf("the minimum = %d", min);
+    return 0;
+}
