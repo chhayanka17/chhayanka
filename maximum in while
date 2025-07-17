@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c,i, d, max,temp;
+    printf("Enter 1st number:\t");
+    scanf("%d", &a);
+    max=a;
+    i=2;
+    while(i<=5)
+    {
+        printf("Enter %d  number:\t",i);
+        scanf("%d", &b);    
+        
+        if(max<b)
+        {
+            //swap
+            temp=b;
+            b=max;
+            max= temp;
+        }
+        
+       // printf("min= %d\n",min);
+        i++;
+    }
+        printf("the maximum = %d", max);
+    return 0;
+}
