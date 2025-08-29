@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b, n, cnt = 0, ast = 0,t;
+      printf("Enter a number till 4 digit:\t");
+      scanf("%d", &a);
+      b  = a;
+      while(a!=0){
+          n = a%10;
+          cnt++; //for the count of number of digits
+          a = a/10;
+      }
+          printf("The number of digits in given number is %d\n", cnt);
+          a = b;
+          switch(cnt){
+        case 4:
+             while(a!=0){
+               n = a%10;
+               ast = ast + pow(n,cnt);
+               a = a/10;
+          }
+          if(b == ast){
+            printf("%d is an armstrong number",ast);}
+            else
+            printf("Its not an armstrong number\n");
+            break;
+        case 3:
+             while(a!=0){
+               n = a%10;
+               ast = ast + pow(n,cnt);
+               a = a/10;
+          }
+          if(b == ast){
+            printf("%d is an armstrong number",ast);}
+            else
+            printf("Its not an armstrong number\n");
+            break;
+        case 2:
+             while(a!=0){
+               n = a%10;
+               ast = ast + pow(n,cnt);
+               a = a/10;
+          }
+          if(b == ast){
+            printf("%d is an armstrong number",ast);}
+            else
+            printf("Its not an armstrong number\n");
+            break;
+        
+        
+        default:
+            printf("end");
+     
+    }
+    
+          
+
+    return 0;
+}
