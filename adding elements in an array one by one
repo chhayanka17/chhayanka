@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a[10], b[10], sum[10];
+    int n, i;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements one by one:\n");
+    for(i = 0; i < n; i++) {
+        printf("\nEnter element %d of first array: ", i + 1);
+        scanf("%d", &a[i]);
+
+        printf("Enter element %d of second array: ", i + 1);
+        scanf("%d", &b[i]);
+
+        sum[i] = a[i] + b[i];  // Add immediately after input
+    }
+
+    printf("\nSum of two arrays is:\n");
+    for(i = 0; i < n; i++)
+        printf("%d\n", sum[i]);
+
+    return 0;
+}
