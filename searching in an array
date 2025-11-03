@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+    //searching in an array
+    int arr[100];
+    printf("Enter 5 elements:\n");
+    for(int i = 0; i < 5; i++){
+        scanf("%d", &arr[i]);
+    }
+    int n = 5; // current number of elements
+    int target;
+    printf("Enter element to search: ");
+    scanf("%d", &target);
+    int found = 0;
+    for(int i = 0; i < n; i++){
+        if(arr[i] == target){
+            found = 1;
+            break;
+        }
+    }
+    if(found){
+        printf("Element found in the array.\n");
+    } else {
+        printf("Element not found in the array.\n");
+    }
+    return 0;
+}
