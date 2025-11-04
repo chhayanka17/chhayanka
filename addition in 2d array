@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main(){
+   //adding 2 dimensional array
+   int a[2][2], b[2][2];
+   int sum[2][2];
+    //taking input for first 2D array
+    printf("Enter elements of first 2D array:\n");
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            scanf("%d", &a[i][j]);
+        }
+    }
+    //taking input for second 2D array
+    printf("Enter elements of second 2D array:\n");
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            scanf("%d", &b[i][j]);
+        }
+    }
+    //adding two 2D arrays
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            sum[i][j] = a[i][j] + b[i][j];
+        }
+    }
+   //printing the sum of two dimensional array
+    printf("Sum of two 2D arrays:\n");
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
